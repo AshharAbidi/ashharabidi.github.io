@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Syed Ashhar Abidi — Public Relations & Brand Communication</title>
+<meta name="description" content="Portfolio of Syed Ashhar Abidi — PR professional specialising in storytelling, media relations, and brand communication." />
+
+<!-- Open Graph / Social -->
+<meta property="og:title" content="Syed Ashhar Abidi — Public Relations" />
+<meta property="og:description" content="Strategic PR professional specialising in impactful storytelling, media relations, and brand communication." />
+<meta property="og:type" content="website" />
+
+<!-- Favicon (inline SVG, an "A" on cream) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23EFEAE0'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='22' font-weight='700' text-anchor='middle' fill='%231C1A17'%3EA%3C/text%3E%3C/svg%3E" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --paper: #EFEAE0;
+    --paper-deep: #E6DFD0;
+    --ink: #1C1A17;
+    --ink-soft: #4A4540;
+    --ink-mute: #8B7E6B;
+    --rule: #C9BFAB;
+    --oxblood: #8C2A2A;
+    --oxblood-deep: #6B1F1F;
+    --bronze: #A67C3A;
+    --max-w: 1180px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Instrument Sans', system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Subtle paper grain */
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none;
+    opacity: 0.35;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 0 0.07 0 0 0 0.4 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    z-index: 1;
+  }
+
+  main, header, footer { position: relative; z-index: 2; }
+
+  ::selection { background: var(--oxblood); color: var(--paper); }
+
+  a { color: inherit; text-decoration: none; }
+  a.link {
+    border-bottom: 1px solid var(--rule);
+    transition: border-color .25s ease, color .25s ease;
+  }
+  a.link:hover { color: var(--oxblood); border-color: var(--oxblood); }
+
+  .container {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 clamp(20px, 5vw, 56px);
+  }
+
+  /* ───────── MASTHEAD ───────── */
+  .masthead {
+    padding: clamp(28px, 5vw, 56px) 0 clamp(40px, 7vw, 80px);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .issue-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    padding-bottom: clamp(40px, 7vw, 80px);
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: clamp(40px, 7vw, 80px);
+  }
+
+  .issue-meta span:nth-child(2) { letter-spacing: 0.3em; }
+
+  .name {
+    font-family: 'Fraunces', Georgia, serif;
+    font-variation-settings: 'opsz' 144, 'SOFT' 30;
+    font-weight: 400;
+    font-size: clamp(56px, 13vw, 168px);
+    line-height: 0.88;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+    margin-bottom: clamp(24px, 4vw, 40px);
+    animation: rise 0.9s cubic-bezier(.2,.7,.2,1) both;
+  }
+
+  .name em {
+    font-style: italic;
+    font-variation-settings: 'opsz' 144, 'SOFT' 100;
+    color: var(--oxblood-deep);
+  }
+
+  .tagline-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: clamp(16px, 4vw, 48px);
+    align-items: end;
+    padding-top: clamp(20px, 3vw, 32px);
+    border-top: 1px solid var(--rule);
+  }
+
+  .tagline {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(18px, 2.4vw, 26px);
+    line-height: 1.35;
+    color: var(--ink-soft);
+    max-width: 560px;
+    animation: rise 0.9s 0.1s cubic-bezier(.2,.7,.2,1) both;
+  }
+
+  .contact-stack {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-align: right;
+    color: var(--ink-soft);
+    line-height: 2;
+    animation: rise 0.9s 0.2s cubic-bezier(.2,.7,.2,1) both;
+  }
+
+  .contact-stack a { display: block; transition: color .25s ease; }
+  .contact-stack a:hover { color: var(--oxblood); }
+
+  @media (max-width: 640px) {
+    .tagline-row { grid-template-columns: 1fr; gap: 24px; }
+    .contact-stack { text-align: left; }
+  }
+
+  /* ───────── SECTIONS ───────── */
+  section {
+    padding: clamp(56px, 9vw, 112px) 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .section-label {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    margin-bottom: clamp(28px, 4vw, 48px);
+  }
+
+  .section-label::before {
+    content: "§ ";
+    color: var(--ink-mute);
+  }
+
+  /* ───────── ABOUT ───────── */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: clamp(32px, 6vw, 80px);
+    align-items: start;
+  }
+
+  .about-aside {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    line-height: 1.9;
+    color: var(--ink-mute);
+    letter-spacing: 0.04em;
+  }
+
+  .about-aside dt { color: var(--ink); font-weight: 500; margin-top: 16px; }
+  .about-aside dt:first-child { margin-top: 0; }
+
+  .lede {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 350;
+    font-size: clamp(22px, 2.6vw, 32px);
+    line-height: 1.4;
+    color: var(--ink);
+    letter-spacing: -0.012em;
+  }
+
+  .dropcap {
+    font-family: 'Fraunces', Georgia, serif;
+    font-variation-settings: 'opsz' 144;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--oxblood-deep);
+    float: left;
+    font-size: 5.2em;
+    line-height: 0.82;
+    padding: 0.06em 0.12em 0 0;
+    margin-top: 0.04em;
+  }
+
+  @media (max-width: 720px) {
+    .about-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ───────── EXPERIENCE ───────── */
+  .entry {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: clamp(20px, 4vw, 56px);
+    padding: clamp(28px, 4vw, 44px) 0;
+    border-top: 1px solid var(--rule);
+  }
+  .entry:first-of-type { border-top: none; padding-top: 0; }
+
+  .entry-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: var(--ink-mute);
+    padding-top: 8px;
+  }
+
+  .entry-date .loc {
+    display: block;
+    margin-top: 6px;
+    color: var(--bronze);
+  }
+
+  .entry h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(24px, 3vw, 34px);
+    line-height: 1.15;
+    letter-spacing: -0.018em;
+    margin-bottom: 6px;
+  }
+
+  .entry h4 {
+    font-family: 'Instrument Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+    letter-spacing: 0.01em;
+  }
+
+  .entry h4 .org {
+    color: var(--oxblood);
+    font-style: italic;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+  }
+
+  .entry ul { list-style: none; }
+  .entry li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+  .entry li::before {
+    content: "—";
+    position: absolute; left: 0;
+    color: var(--oxblood);
+  }
+
+  @media (max-width: 720px) {
+    .entry { grid-template-columns: 1fr; gap: 12px; }
+    .entry-date { padding-top: 0; }
+  }
+
+  /* ───────── PULL QUOTE ───────── */
+  .pullquote {
+    text-align: center;
+    padding: clamp(64px, 10vw, 120px) clamp(20px, 6vw, 80px);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .pullquote p {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(28px, 4.5vw, 56px);
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .pullquote p::before, .pullquote p::after {
+    color: var(--oxblood);
+    font-weight: 400;
+  }
+  .pullquote p::before { content: "“"; margin-right: 4px; }
+  .pullquote p::after { content: "”"; margin-left: 4px; }
+
+  .pullquote cite {
+    display: block;
+    margin-top: 28px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    font-style: normal;
+  }
+
+  /* ───────── PROJECTS ───────── */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(20px, 3vw, 32px);
+  }
+
+  .project {
+    background: var(--paper-deep);
+    border: 1px solid var(--rule);
+    padding: clamp(24px, 3vw, 36px);
+    transition: transform .35s ease, border-color .35s ease, background .35s ease;
+    position: relative;
+  }
+
+  .project:hover {
+    transform: translateY(-3px);
+    border-color: var(--oxblood);
+  }
+
+  .project.feature {
+    grid-column: 1 / -1;
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: clamp(24px, 4vw, 56px);
+    align-items: center;
+    min-height: 280px;
+  }
+  .project.feature:hover { border-color: var(--oxblood); }
+  .project.feature .project-meta { color: rgba(239,234,224,0.55); }
+  .project.feature h3 { color: var(--paper); }
+  .project.feature p { color: rgba(239,234,224,0.78); }
+  .project.feature .feature-badge {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    border: 1px solid var(--oxblood);
+    padding: 6px 12px;
+    margin-bottom: 24px;
+  }
+
+  .project-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(22px, 2.6vw, 30px);
+    line-height: 1.15;
+    letter-spacing: -0.018em;
+    margin-bottom: 12px;
+  }
+
+  .project .role-line {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--bronze);
+    margin-bottom: 14px;
+  }
+
+  .project p {
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .project ul { margin-top: 10px; list-style: none; }
+  .project li {
+    position: relative;
+    padding-left: 18px;
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 6px;
+  }
+  .project li::before {
+    content: "·";
+    position: absolute; left: 4px; top: -2px;
+    color: var(--oxblood);
+    font-size: 22px;
+    line-height: 1;
+  }
+  .project.feature li { color: rgba(239,234,224,0.78); }
+
+  @media (max-width: 720px) {
+    .projects-grid { grid-template-columns: 1fr; }
+    .project.feature { grid-template-columns: 1fr; }
+  }
+
+  /* ───────── EDUCATION + SKILLS row ───────── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(40px, 6vw, 80px);
+  }
+  @media (max-width: 720px) { .two-col { grid-template-columns: 1fr; gap: 56px; } }
+
+  .edu-block { margin-bottom: 28px; }
+  .edu-block h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(20px, 2.3vw, 26px);
+    line-height: 1.25;
+    margin-bottom: 6px;
+    letter-spacing: -0.015em;
+  }
+  .edu-block .institute {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    color: var(--oxblood);
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .edu-block .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-mute);
+    letter-spacing: 0.04em;
+  }
+
+  .skill-group { margin-bottom: 24px; }
+  .skill-group dt {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 10px;
+  }
+  .skill-group dd {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(16px, 1.7vw, 19px);
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .skill-group dd .div {
+    color: var(--rule);
+    margin: 0 8px;
+  }
+
+  /* ───────── VOLUNTEER ───────── */
+  .vol-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(20px, 3vw, 36px);
+  }
+  @media (max-width: 720px) { .vol-grid { grid-template-columns: 1fr; } }
+
+  .vol-card {
+    border-top: 2px solid var(--ink);
+    padding-top: 18px;
+  }
+  .vol-card h4 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  .vol-card p {
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  /* ───────── FOOTER ───────── */
+  footer {
+    padding: clamp(56px, 8vw, 96px) 0 clamp(40px, 5vw, 64px);
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: end;
+  }
+  @media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr; } }
+
+  .footer-cta {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 350;
+    font-size: clamp(36px, 6vw, 80px);
+    line-height: 0.95;
+    letter-spacing: -0.025em;
+  }
+  .footer-cta em {
+    font-style: italic;
+    color: var(--oxblood-deep);
+    font-variation-settings: 'opsz' 144, 'SOFT' 100;
+  }
+
+  .footer-contact {
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    line-height: 2;
+    color: var(--ink-soft);
+  }
+  .footer-contact a { display: block; transition: color .25s ease; }
+  .footer-contact a:hover { color: var(--oxblood); }
+  @media (max-width: 720px) { .footer-contact { text-align: left; } }
+
+  .colophon {
+    margin-top: clamp(48px, 7vw, 80px);
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  @media (max-width: 540px) { .colophon { flex-direction: column; gap: 8px; } }
+
+  /* ───────── ANIMATIONS ───────── */
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1);
+  }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+    .reveal { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════ MASTHEAD ════════════ -->
+<header class="masthead">
+  <div class="container">
+    <div class="issue-meta">
+      <span>The Personal Press · Vol. I</span>
+      <span>Public Relations &amp; Brand Communication</span>
+      <span>Est. 2025</span>
+    </div>
+
+    <h1 class="name">Syed Ashhar<br/><em>Abidi</em></h1>
+
+    <div class="tagline-row">
+      <p class="tagline">A strategic PR practitioner crafting narratives that resonate, strengthen reputation, and drive meaningful audience engagement.</p>
+      <div class="contact-stack">
+        <a href="mailto:abidiashhar@gmail.com">abidiashhar@gmail.com</a>
+        <a href="tel:+917678116999">+91 76781 16999</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ════════════ ABOUT ════════════ -->
+<section id="about" class="reveal">
+  <div class="container">
+    <span class="section-label">About</span>
+    <div class="about-grid">
+      <dl class="about-aside">
+        <dt>Based</dt>
+        <dd>New Delhi, India</dd>
+        <dt>Discipline</dt>
+        <dd>Public Relations<br/>Storytelling<br/>Brand Communication</dd>
+        <dt>Available For</dt>
+        <dd>Full-time roles<br/>Freelance briefs<br/>Collaborations</dd>
+      </dl>
+      <p class="lede">
+        <span class="dropcap">I</span>am a strategic PR professional specialising in impactful storytelling, media relations, and brand communication — known for crafting narratives that resonate, strengthen reputation, and drive meaningful audience engagement. My work sits at the intersection of editorial instinct and brand strategy: turning messaging into stories worth covering.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ EXPERIENCE ════════════ -->
+<section id="experience" class="reveal">
+  <div class="container">
+    <span class="section-label">Experience</span>
+
+    <article class="entry">
+      <div class="entry-date">
+        Jun 2025 — Jul 2025
+        <span class="loc">New Delhi</span>
+      </div>
+      <div>
+        <h3>Public Relations Trainee</h3>
+        <h4><span class="org">The 23 Watts</span> · PR &amp; Communications Agency</h4>
+        <ul>
+          <li>Drafted press releases and brand stories that strengthened client messaging and improved campaign clarity.</li>
+          <li>Built targeted media lists and executed personalised journalist outreach, contributing to consistent coverage.</li>
+          <li>Supported internal brainstorms with narrative ideas that influenced campaign direction and client communication.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="entry-date">
+        Jul 2024 — Dec 2024
+        <span class="loc">Dehradun</span>
+      </div>
+      <div>
+        <h3>PR Head</h3>
+        <h4><span class="org">Freakin' Market</span> · First start-up</h4>
+        <ul>
+          <li>Led sponsorship activation and digital outreach for the venture's launch phase.</li>
+          <li>Boosted brand visibility through event-based PR campaigns and on-the-ground activations.</li>
+        </ul>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ════════════ PULL QUOTE ════════════ -->
+<section class="pullquote reveal">
+  <div class="container">
+    <p>The brief is never the story. The story is what the brief is reaching for.</p>
+    <cite>— Working Principle</cite>
+  </div>
+</section>
+
+<!-- ════════════ PROJECTS ════════════ -->
+<section id="projects" class="reveal">
+  <div class="container">
+    <span class="section-label">Selected Work</span>
+
+    <div class="projects-grid">
+
+      <!-- Featured: Paw of Hope -->
+      <article class="project feature">
+        <div>
+          <span class="feature-badge">Featured · Documentary</span>
+          <div class="project-meta"><span>Oct 2025</span><span>Co-Director</span></div>
+        </div>
+        <div>
+          <h3>Paw of Hope</h3>
+          <p class="role-line" style="color: rgba(166,124,58,0.95);">Documentary on dogs in rescue shelters</p>
+          <p>An emotionally driven documentary spotlighting the lives of dogs in rescue shelters. Handled full-scale production from concept development and field shooting through to final edit — building a story arc designed to move audiences toward action, not just empathy.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-meta"><span>Mar 2025</span><span>PR Team Lead</span></div>
+        <h3>Chalchitra Film Fest</h3>
+        <p class="role-line">Sponsor outreach &amp; campaign comms</p>
+        <ul>
+          <li>Managed outreach for sponsors and partners, securing successful collaborations.</li>
+          <li>Coordinated campaign communication and backend operations to improve event flow.</li>
+          <li>Owned timely follow-ups and documentation, enhancing internal coordination.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project-meta"><span>Apr 2025</span><span>Sponsorship Co-Head</span></div>
+        <h3>UKTI — UPES Literature Fest</h3>
+        <p class="role-line">Uttarakhand's largest university literature festival</p>
+        <ul>
+          <li>Co-led sponsorship outreach and secured partnerships across categories.</li>
+          <li>Coordinated deliverables to ensure smooth brand integration on-site and on-air.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project-meta"><span>May 2023</span><span>Founder</span></div>
+        <h3>Self-Initiated Dropshipping Business</h3>
+        <p class="role-line">Shopify · Meta Ads</p>
+        <ul>
+          <li>Launched Shopify store and ran paid ad campaigns to drive conversions.</li>
+          <li>Achieved break-even in under six weeks through tight market targeting and lean operations.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project-meta"><span>Mar — May 2022</span><span>Community Strategist</span></div>
+        <h3>YouTube / Discord Community Strategy</h3>
+        <p class="role-line">Fan engagement &amp; creator growth</p>
+        <ul>
+          <li>Built and managed servers, leading fan engagement and retention strategies.</li>
+          <li>Supported creators with tailored growth initiatives across platforms.</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ EDUCATION + SKILLS ════════════ -->
+<section id="education" class="reveal">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <span class="section-label">Education</span>
+        <div class="edu-block">
+          <h3>BBA — Events, PR &amp; Corporate Communication</h3>
+          <p class="institute">University of Petroleum and Energy Studies, Dehradun</p>
+          <p class="meta">Graduating April 2025</p>
+        </div>
+        <div class="edu-block">
+          <h3>Senior Secondary &amp; Secondary</h3>
+          <p class="institute">Lotus Valley International School, Noida</p>
+          <p class="meta">Class XII · 82% &nbsp;·&nbsp; Class X · 85.6%</p>
+        </div>
+      </div>
+
+      <div>
+        <span class="section-label">Skills &amp; Toolkit</span>
+        <dl class="skill-group">
+          <dt>Languages</dt>
+          <dd>English <span class="div">·</span> Hindi (native)</dd>
+        </dl>
+        <dl class="skill-group">
+          <dt>Tools</dt>
+          <dd>Canva <span class="div">·</span> Meta Ads <span class="div">·</span> MS Excel <span class="div">·</span> Shopify</dd>
+        </dl>
+        <dl class="skill-group">
+          <dt>Practice</dt>
+          <dd>PR Strategy <span class="div">·</span> Media Relations <span class="div">·</span> Press Writing <span class="div">·</span> Campaign Planning <span class="div">·</span> Sponsorship Activation <span class="div">·</span> Brand Communication</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ VOLUNTEER ════════════ -->
+<section id="volunteer" class="reveal">
+  <div class="container">
+    <span class="section-label">Volunteer &amp; Community</span>
+    <div class="vol-grid">
+      <div class="vol-card">
+        <h4>Siksha NGO</h4>
+        <p>Conducted field research and community literacy awareness drives across Delhi.</p>
+      </div>
+      <div class="vol-card">
+        <h4>Whoishussain</h4>
+        <p>Participated in donation drives and social campaigns supporting underprivileged groups.</p>
+      </div>
+      <div class="vol-card">
+        <h4>Bifrost Festival</h4>
+        <p>Contributed to organizing education-focused community festivals in Delhi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ════════════ FOOTER ════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <p class="footer-cta">Let's <em>tell</em><br/>a better story.</p>
+      <div class="footer-contact">
+        <a href="mailto:abidiashhar@gmail.com">abidiashhar@gmail.com</a>
+        <a href="tel:+917678116999">+91 76781 16999</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+    <div class="colophon">
+      <span>© 2026 Syed Ashhar Abidi · All rights reserved</span>
+      <span>End of issue —</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reveal-on-scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
